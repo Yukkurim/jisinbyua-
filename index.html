@@ -8,17 +8,19 @@
 </head>
 <body>
   <header>
-    <h1>地震速報ビューワー</h1>
-    <button id="downloadBtn">履歴をダウンロード</button>
-    <button id="settingsBtn">⚙️ 設定</button>
+    <h1>📡 地震速報ビューワー</h1>
+    <div class="header-buttons">
+      <button id="downloadBtn">📥 履歴DL</button>
+      <button id="settingsBtn">⚙️ 設定</button>
+    </div>
   </header>
   <main>
-    <div id="quakeList"></div>
+    <div id="quakeList" class="quake-list"></div>
   </main>
   <div id="settingsModal" class="modal hidden">
     <div class="modal-content">
-      <h2>設定</h2>
-      <label>更新間隔（秒）<input type="number" id="refreshInterval" min="10" value="60" /></label><br />
+      <h2>⚙️ 設定</h2>
+      <label>更新間隔（秒）：<input type="number" id="refreshInterval" min="10" value="60" /></label><br />
       <label><input type="checkbox" id="enableSound" checked /> 通知音を有効にする</label><br />
       <button id="closeSettings">閉じる</button>
     </div>
